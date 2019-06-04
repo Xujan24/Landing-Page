@@ -1,0 +1,427 @@
+@import "./variables.scss";
+@import "../assets/fontawesome/fontawesome.scss";
+@import "../assets/fontawesome/solid.scss";
+@import "../assets/fontawesome/brands.scss";
+@import "../assets/fontawesome/regular.scss";
+
+html, body{ margin : 0rem; padding: 0rem;}
+
+//-----------stylesheet for general layout------------
+.flex-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-item{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.section{
+    position: relative;
+}
+
+.padding-5{
+    padding: 5% 0rem;
+}
+
+.padding-10{
+    padding: 10% 0rem;
+}
+
+// ------------------stylesheet for header-----------------
+
+.header{
+    background-color: $primary;
+    padding:0rem;
+    padding: 0rem;
+
+    .flex-item{
+        flex-grow: 0 !important;
+        flex-basis: auto !important;
+    }
+}
+
+.banner{
+    background-image: url("../imgs/background.jpg");
+    background-size: cover;
+    margin: 0rem;
+
+    .banner-content{
+        padding-top: 20%;;
+        padding-bottom: 20%;
+        h2{
+            color: $light;
+            font-weight: $medium;
+            font-family: $primary-font;
+            margin: 0rem;
+            text-transform: uppercase;
+        }
+
+        a{
+            text-transform: uppercase;
+            background: $primary;
+            padding: 1rem;
+            text-decoration: none;
+            color: $light;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+            border: 1px groove rgba(0,0,0,0.2);
+            border-radius: 0.4rem;
+            &:hover{
+                background:$secondary;
+            }
+        }
+    }
+}
+
+.banner-bottom{
+    background: $secondary;
+    padding: 1rem;
+    p{
+        font-family: $primary-font;
+        font-weight: $medium;
+        color: $light;
+        font-size: $banner-bottom-font-size;
+        margin: 0rem;
+    }
+}
+
+// --------------------------stylesheet for header ends-------------------------------
+
+// ---------------------------stylesheet for contents---------------------------------
+// ----------------------------stylesheet for services section------------------------
+.services{
+    background-color: $secondary-light;
+    .icon{
+        text-align: center;
+        font-size: $icon-size;
+        background-color: $dark;
+        color: $secondary-light;
+        padding: 3rem;
+        width: $icon-size;
+        height: $icon-size;
+        border-radius: 50%;
+        margin: 0rem auto;
+    }
+
+    a{
+        display: block;
+        color: $dark;
+        text-decoration: none;
+        font-family: $primary-font;
+        font-size: $link-font-size;
+        text-align: center;
+        padding: 1rem 0rem 2rem 0rem;
+        font-weight: $thin;
+        text-transform: uppercase;
+
+        &:hover{
+            color: $primary;
+        }
+    }
+}
+
+
+//------------------------stylesheet for benefits section------------------------------
+.benefits{
+    background: $primary;
+    .img-benefits{
+        width: 100%;
+        height: auto;
+        border: 0.2rem solid $light;
+    }
+}
+
+
+// --------------------------stylesheet for about-us section----------------------------
+.about-us{
+    background-color: $dark;
+
+    .section-title-icon{
+        .icon{
+            background: $dark;
+        }
+    }
+}
+
+
+// ---------------------------stylesheet for clients section-------------------------------
+.clients{
+    background: $light;
+    .section-title-icon{
+        .icon{
+            background-color: $light;
+            color: $dark;
+        }
+
+        .heading{
+            color: $dark;
+        }
+    }
+
+    a{
+        text-align: center;
+        img{
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            -webkit-transition: filter 2s ease;
+            transition: filter 1s ease;
+        }
+        
+        &:hover{
+            img{
+                -webkit-filter: grayscale(0%);
+                filter: grayscale(0%);
+            }
+        }
+    }
+}
+
+// -----------------------------stylesheet for contact us section----------------------------------
+
+.contact{
+    background: $secondary;
+
+    .section-title-icon{
+        .icon{
+            background: $secondary;
+        }
+    }
+}
+
+// -------------------------------stylesheet for content sections ends-------------------------------
+
+//-------------------------------- stylesheet for footer section--------------------------------------
+.footer{
+    background: $dark;
+    color: $light;
+    font-family: $primary-font;
+    font-size: $subtitle-font-size;
+    padding: 1.5rem 0rem;
+    p{
+        margin: 0rem;
+    }
+}
+//-------------------------------stylesheet for footersection ends.--------------------------------------
+
+//-------------------------------Sytlesheet for various components---------------------------------------
+//--------------------------------stylesheet for section title with icon---------------------------------
+.section-title-icon{
+    .icon{
+        width: $section-title-icon-size;
+        text-align: center;
+        font-size: $section-title-icon-size;
+        position: absolute;
+        padding: 1rem 2rem 0rem 2rem;
+        background: $primary;
+        color: $light;
+        top: -2.6rem;
+        border-radius: 50%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .heading{
+        font-weight: $medium;
+        color: $light;
+        padding-top: 3rem;
+        text-align: center;
+        margin: 0rem !important;
+    }
+}
+
+// -----------------------------------stylesheet for contact us form component-------------------------
+.form{
+    width: 50%;
+    margin: 0rem auto;
+
+    .label{
+        font-family: $primary-font;
+        color: $light;
+        margin-bottom: 0.5rem;
+    }
+
+    .input-control{
+        width: 100%;
+        padding: 0.5rem;
+        font-family: $primary-font;
+        font-size: 1rem;
+        border: 1px groove $secondary-light;
+    }
+
+    .textarea{
+        height: 10rem;
+    }
+
+    .button{
+        border: none;
+        background: $primary;
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        font-family: $primary-font;
+        color: $light;
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+}
+
+
+//----------------------------------stylesheet for card layout used in about us section -----------------
+.card{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3rem;
+
+    .icon{
+        font-size: 2rem;
+        i{
+            text-align: center;
+            padding: 1rem;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: $secondary;
+        }
+    }
+
+    .content{
+        padding: 0rem 1rem;
+        p{
+            margin-top: 0rem;
+        }
+    }
+}
+
+
+// stylesheet for text contents
+.brand{
+    color: $light;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    font-weight: $medium;
+    margin: 0rem;
+}
+.phone{
+    display: block;
+    background-color: $yellow;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-family: $primary-font;
+    font-weight: $medium;
+}
+
+.heading{
+    font-family: $primary-font;
+    font-size: $heading-font-size;
+    text-transform: uppercase;
+}
+
+.services-heading{
+    margin: 0rem !important;
+    padding-top: 2rem;
+    font-weight: $thin;
+    text-align: center;
+}
+
+.title{
+    font-family:$primary-font;
+    font-weight: $medium;
+    font-size: $title-font-size;
+    color: $light;
+}
+
+.subtitle{
+    font-family: $primary-font;
+    color: $light;
+    font-weight: $thin;
+    font-size: $subtitle-font-size;
+}
+
+.benefits-list{
+    padding-left: 1rem;
+    font-family: $primary-font;
+    color: $light;
+    font-weight: $bold;
+    font-size: $title-font-size;
+}
+
+
+// media query for responsive design
+// for mobile phones
+@media screen and (max-width: $mobile-tablet){
+    .container{
+        width: 95%;
+        margin : 0rem auto;
+    }
+
+    .flex-wrapper{
+        flex-direction: column;
+    }
+
+    .form{
+        width: 85%;
+    }
+
+    .card{
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+
+        .icon{
+            padding-bottom: 1rem;
+        }
+    }
+
+    .heading{
+        margin: 1rem auto;
+        margin-bottom: 0rem;
+        font-size: $heading-font-size-mobile;
+    }
+
+    .banner-bottom{
+        p{
+            font-size: $banner-bottom-font-size-mobile;
+        }
+    }
+
+    .services-heading{
+        padding-top: 1rem;
+    }
+
+    .img-benefits{
+        margin-bottom: 2rem;
+    }
+}
+
+// for tablet screens
+@media screen and (min-width: $mobile-tablet) and (max-width: $tablet-desktop) {
+    .container{
+        width: 95%;
+        margin : 0rem auto;
+    }
+
+    .flex-wrapper{
+        flex-direction: row;
+    }
+}
+
+// for desktop and larger screens
+@media screen and (min-width: $tablet-desktop){
+    .container{
+        width: 1024px;
+        margin : 0rem auto;
+    }
+
+    .flex-wrapper{
+        flex-direction: row;
+    }
+
+    .banner{
+        .banner-content{
+            h2{
+                font-size: $banner-content-font-size;
+            }
+        }
+    }
+}

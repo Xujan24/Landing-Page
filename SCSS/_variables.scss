@@ -1,0 +1,37 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:300,400,700,800&display=swap";
+
+
+// breakpoints for responsive design
+$mobile-tablet: 760px;
+$tablet-desktop: 1024px;
+
+// variables for font
+$primary-font: 'Raleway', sans-serif;
+
+// font weights
+$thin : 300;
+$medium : 400;
+$bold : 700;
+$black : 800;
+
+// font sizes
+$heading-font-size: 3rem;
+$heading-font-size-mobile: 1.5rem;
+$banner-content-font-size: 3rem;
+$banner-bottom-font-size: 1.5rem;
+$banner-bottom-font-size-mobile: 1rem;
+$icon-size: 4rem;
+$link-font-size: 1.2rem;
+$section-title-icon-size: 4rem;
+$title-font-size: 1.5rem;
+$subtitle-font-size: 0.9rem;
+
+// variables for colors;
+$primary: #ee864a;
+$secondary: #7fccda;
+$secondary-light: lighten($secondary, 20%);
+$dark: #374242;
+$light: #fff;
+$yellow: #f9eb76;
+
+
